@@ -1,0 +1,10 @@
+[tool.ruff]
+select = ["F", "E", "W"]
+line-length = 79
+target-version = "py39"
+ignore = ["F811"]
+extend-exclude = ["migrations", "tests"]
+[tool.ruff.per-file-ignores]
+"settings.py" = ["E501"]
+[tool.blue]
+line-length = 79
